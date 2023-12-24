@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Easter Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            transition: background-color .5s;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #00004d;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #C8DFEA;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #FFF;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+
+
+        #Home {
+            transition: margin-left .5s;
+            padding: 16px;
+            /*background-color:#000;*/
+            background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2FmZGE2MDVkYmIxNTBjMjg0OGNiOGVhY2Q4NzQ4MmMwYTY5NGZkMyZjdD1n/KDteAGZcv7LiehlTDm/giphy.gif");
+            background-size: cover;
+            height: 1000px;
+            max-width: 100%;
+            color: #000;
+            font-size: 36px;
+            font-family: Candara;
+        }
+
+        #welcome-spacing {
+            margin-top: 5.5%;
+        }
+
+
+
+
+        #About {
+            height: 100%;
+            width: 100%;
+            margin:auto;
+        }
+
+        #Invert {
+            height: 100%;
+            width: 100%;
+            margin:auto;
+        }
+
+        .AboutHeading {
+            color: #39ff14;
+            font-family: Inconsolata, monospace;
+            width: 95%;
+            max-width: 740px;
+            border-style: dotted;
+            border-radius: 10px;
+            bottom: 10%;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 4%;
+            padding: 15px;
+           
+        }
+
+        .AboutHeadingLight {
+            color: black;
+            background-color: #39ff14;
+            font-family: Inconsolata, monospace;
+            width: 95%;
+            max-width: 740px;
+            border-style: dotted;
+            border-radius: 10px;
+            bottom: 10%;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 4%;
+            padding: 15px;
+        }
+
+        .about-entry {
+            font-size: 16px;
+            justify-content: center;
+            text-align: center;
+            margin-top: 6%;
+        }
+
+
+        .card-container {
+            display: flex;
+            justify-content:center;
+        }
+
+
+
+
+
+/*FOR TABLETS, AND DESKTOPS*/
+
+@media screen and (min-width: 600px) {
+
+
+#Projects{
+background-color:#282828;
+color:black;
+height:100%;
+min-height: 1100px;
+max-width: 100%;
+margin:auto;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.row {
+  margin: 10px -16px;
+  height:100%;
+  max-height: 1100px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+  flex-direction: row;
+  height: 450px;
+  
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 0px 0px 7px 7px;
+  height: 450px;
+  flex-direction: row;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+}
+
+//////////////////////////////////////////////////////////
+/*FOR mobile*/
+//////////////////////////////////////////////////////////
+
+        .bar-item {
+            width: 100%;
+            display: block;
+            padding: 16px 32px;
+
+        }
+
+
+
+               #Projects {
+            background-color: #282828;
+            color: black;
+            height: 100%;
+            max-width: 1000px;
+            margin: auto;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+
+        .row {
+            margin: 10px -16px;
+            flex-direction:column;
+            /*height: 1100px;*/
+            
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 8px;
+
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            display: none;
+            /* Hide all elements by default */
+
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            color:black;
+            padding: 10px;
+            border-radius: 0px 0px 7px 7px;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: flex;
+        }
+
+        .quote-text {
+            background-image: url("https://thumbs.dreamstime.com/b/ancient-papyrus-background-2467019.jpg");
+            border-radius: 0px 0px 8px 8px;
+            font-size: 18px;
+            padding: 32px;
+            max-width: 750px;
+            margin:auto; 
+        }
+
+
+        .Quotes_hdr {
+            padding: 16px 8px;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            background-color: #E0AA3E;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            color: white;
+            max-width: 750px;
+            margin: auto;
+        }
+
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+
+
+
+                #Skills {
+            background-color: #290916;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+
+
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        .progress-container {
+            width: 70%;
+            background-color: #BEBEBE;
+            border-radius: 20px;
+        }
+
+        .skills {
+            background-color: #290916;
+            width: 100%;
+        }
+
+        
+        .animated-progress {
+            width: 90%;
+            height: 30px;
+            border-radius: 14.5px;
+            background-color: #EDEDED;
+            margin: 20px 10px;
+            border: 1px solid rgb(189, 113, 113);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .animated-progress span {
+            height: 100%;
+            width: 90%;
+            display: block;
+            width: 0;
+            color: rgb(255, 251, 251);
+            line-height: 30px;
+            position: absolute;
+            text-align: end;
+            padding-right: 5px;
+            border-radius: 15px;
+            margin:auto;
+
+        }
+
+        .progress-green span {
+            background-color: green;
+            margin: auto;
+        }
+
+        .skilltype-top {
+            margin: auto;
+            background-image: linear-gradient(to bottom right, #7B899B, #353B43);
+            border-radius: 0 20px 0 0;
+             /*width:350px;*/
+            width: 90%;
+            max-width: 700px;
+            padding: 10px;
+        }
+
+        .skilltype {
+            margin: auto;
+            background-image: linear-gradient(to bottom right, #7B899B, #353B43);
+            /*width:350px;*/
+            width: 90%;
+            max-width: 700px;
+            padding: 10px;
+        }
+
+        .skilltype-bottom {
+            margin: auto;
+            background-image: linear-gradient(to bottom right, #7B899B, #353B43);
+            border-radius: 0 0 0 20px;
+            /*width:350px;*/
+            width: 90%;
+            max-width: 700px;
+            padding: 10px;
+        }
+
+
+
+
+
+
+     
+
+            
+
+        .flip-card {
+            background-color: transparent;
+            width: 600px;
+            max-height: 200px;
+            perspective: 1000px;
+            right: 5px;
+            display: inline-block;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            right: 5px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .flip-card-inner-right {
+            position: relative;
+            left: -10px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 0px 10px 10px 0px;
+
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateX(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #313639;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .left-flip-card-front {
+            border-radius: 10px 0px 0px 10px;
+
+        }
+
+        .flip-card-back {
+            background-color: #313639;
+            color: white;
+            transform: rotateX(180deg);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            height:100%;
+        }
+
+
+        .flip-cardb {
+            /*background-color: transparent;*/
+            width: 75px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+
+        #MLL {
+            background-color: #00AB41;
+            color: white;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .mission_left {
+            background-color: #00AB41;
+            color: white;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+
+        .mission_right {
+            background-color: #00AB41;
+            color: white;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+        .mission_front {
+            color: #39ff14;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+
+        .story_left {
+            background-color: #051094;
+            color: white;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+
+        .story_right {
+            background-color: #051094;
+            color: white;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+        .story_front {
+            color: #34e2e2;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+
+
+        .fam_left {
+            background-color: #710193;
+            color: white;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .fam_right {
+            background-color: #710193;
+            color: white;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+        .fam_front {
+            color: #ad7fa8;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+
+        .hobbies_right {
+            background-color: #ff6289;
+            color: white;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+
+        .hobbies_left {
+            background-color: #ff6289;
+            color: white;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .hobbies_front {
+            color: #F59784;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+            height: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .light-mode {
+            background-color: #FFF;
+            color: black;
+            height: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+
+
+        .btnContainer {
+            /* display: block; */
+            position: relative;
+            /* margin-left:40%;
+            margin-right:40%; */
+            /*left:10%;*/
+            /* flex-direction:row;*/
+    
+        /*margin:auto;*/
+        
+         /* justify-content:center;*/
+         text-align:center; 
+
+        }
+
+
+
+        .child {
+            background: #ccc;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+        }
+
+
+
+
+        #Contact {
+            background: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-decoration: none;
+            color: white;
+            height: 1000px;
+
+        }
+
+        form {
+            background: rgba(27, 31, 34, 0.80);
+            width: 640px;
+            margin: 50px auto;
+            max-width: 97%;
+            border-radius: 4px;
+            padding: 55px 30px;
+            margin-bottom: 12.5%;
+        }
+
+        form .title h2 {
+            letter-spacing: 6px;
+            border-bottom: 1px solid white;
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 32px;
+        }
+
+        form .half {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form .half .item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+            width: 48%;
+        }
+
+        form label {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 3.5px;
+            margin-bottom: 16px;
+        }
+
+        form .half .item input {
+            border-radius: 4px;
+            border: 1px solid white;
+            outline: 0;
+            padding: 16px;
+            width: 100%;
+            height: 44px;
+            background: transparent;
+            font-size: 17px;
+        }
+
+        form .full {
+            margin-bottom: 24px;
+        }
+
+        form .full textarea {
+            background: transparent;
+            border-radius: 4px;
+            border: 1px solid white;
+            outline: 0;
+            padding: 12px 16px;
+            width: 100%;
+            height: 200px;
+            font-size: 17px;
+        }
+
+        form .action {
+            margin-bottom: 32px;
+        }
+
+        form .action input {
+            background: transparent;
+            border-radius: 4px;
+            border: 1px solid white;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            height: 44px;
+            letter-spacing: 3px;
+            outline: 0;
+            padding: 0 20px 0 22px;
+            margin-right: 10px;
+        }
+
+        form .action input[type="submit"] {
+            background: white;
+            color: black;
+        }
+
+        form .icons a {
+            border: 1px solid white;
+            border-radius: 50%;
+            line-height: 36px;
+            text-align: center;
+            font-weight: 600;
+            width: 38px;
+            margin-right: 10px;
+        }
+
+        form .half .item input:focus,
+        form .full textarea:focus,
+        form .action input[type="reset"]:hover,
+        form .icons a:hover {
+            background: rgba(255, 255, 255, 0.075);
+        }
+
+        @media (max-width: 480px) {
+            form .half {
+                flex-direction: column;
+            }
+
+            form .half .item {
+                width: 100%;
+            }
+
+            form .action {
+                display: flex;
+                flex-direction: column;
+            }
+
+            form .action input {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+
+        #aboutopen {
+
+            display: block;
+            position: relative;
+            margin-bottom: 4%;
+            /*right: 30%;*/
+            /*margin-left: 45%;*/
+        }
+
+
+        .flip-card-front-lite {
+            background-color: #F8F8FF;
+
+        }
+
+        .flip-card-back-lite {
+            background-color: #F8F8FF;
+            color: black;
+            transform: rotateX(180deg);
+        }
+
+        .mission_left_lite {
+            background-color: red;
+            border-radius: 10px 0px 0px 10px;
+
+        }
+
+        .mission_right_lite {
+            background-color: #C73866;
+            border-radius: 10px 0px 0px 10px;
+            border-color: #000;
+        }
+
+        .mission_front_lite {
+            color: #C73866;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+        .story_left_lite {
+            background-color: #FD8F52;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+        .story_right_lite {
+            background-color: #FD8F52;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+
+        .story_front_lite {
+            color: #FD8F52;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+        .fam_left_lite {
+            background-color: #FFBD71;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+
+        .fam_right_lite {
+            background-color: #FFBD71;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+        .fam_front_lite {
+            color: #FFBD71;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+        .hobbies_left_lite {
+            background-color: #BB8252;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+
+        .hobbies_right_lite {
+            background-color: #BB8252;
+            border-radius: 0px 10px 10px 0px;
+            white-space: nowrap;
+        }
+
+
+        .hobbies_front_lite {
+            color: #462F1B;
+            font-family: Inconsolata, monospace;
+            justify-content: center;
+        }
+
+
+
+        #dayBtn{
+            border-radius: 10px;
+            background-color: #FAF9F6;
+            padding: 15px;
+            background-image: linear-gradient(to top left, red, yellow);
+            color:white;  
+            width: 40%;
+            text-align:center;
+            margin-right:1%;
+            margin-left:6%;
+            margin: auto;
+        
+            max-width:325px;
+            
+        }
+
+        #nightBtn{
+            background-color: black;
+            border-radius: 10px;
+            padding: 15px;
+            border-color: #0197F6;
+            color: #0197F6;
+            width: 40%;
+             margin-left:2%;
+             margin:auto;
+            /* margin-right:7%; */
+            text-align:center;
+            max-width:325px;
+           
+            
+        }
+
+
+
+
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+
+
+
+        footer {
+            position: relative;
+            left: 0;
+            bottom: 4%;
+            width: 100%;
+            background-color: transparent;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body id="">
+
+
+
+    <div class="tab">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="tablinks bar-item" onclick="openTab(event, 'Home')" id="defaultOpen">Home</a>
+            <a class="tablinks bar-item" onclick="openTab(event, 'About')">About</a>
+            <a class="tablinks bar-item" onclick="openTab(event, 'Skills')">Skills</a>
+            <a class="tablinks bar-item" onclick="openTab(event, 'Projects')">Projects</a>
+            <a class="tablinks bar-item" onclick="openTab(event, 'Contact')">Contact</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="Home" class="tabcontent">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="welcome-spacing">
+            <h2>Hello!</h2>
+            <img src="" alt="" style="width:80">
+            <p id="welcome"></p>
+        </div>
+    </div>
+
+    
+    
+    <div id="Invert">
+        <div id="About" class="tabcontent">
+            
+            <span id="aboutopen" style="font-size:30px;cursor:pointer;color: #39ff14;" onclick="openNav()">&#9776; open</span>
+
+            <h2 id="AHL" class="AboutHeading">About Me</h2>
+
+
+
+
+            <!--https://www.quora.com/I-want-to-put-two-divs-in-HTML-in-the-same-line-but-one-always-comes-under-the-other-one-What-should-I-do-->
+
+
+            <div class="card-container">
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner ">
+                        <div id="MLL" class="flip-card-front">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+
+
+                <!--moving card-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="MFL" class="flip-card-front mission_front">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p>AboutMission()</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="about-entry"> Engineering excellence tailored to each client's vision through the
+                                integration of my experiences in art, psychology, and computer science. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--moving card-->
+
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner-right ">
+                        <div id="MRL" class="flip-card-front mission_right">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+            </div>
+
+
+
+
+            <br/>
+            <br/>
+
+
+            <div class="card-container">
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner ">
+                        <div id="SLL" class="flip-card-front story_left">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+
+
+                <!--moving card-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="SFL" class="flip-card-front story_front">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p>AboutStory()</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="about-entry"> My passion for code began more than ten years ago and since then I have drastically honed my skillset from projects completed at WGU, Nucamp, and plenty of self-study. I look forward to applying these skills professionally!</p>
+                        </div>
+                    </div>
+                </div>
+                <!--moving card-->
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner-right ">
+                        <div id="SRL" class="flip-card-front story_right">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+            </div>
+
+
+            <br/>
+            <br/>
+
+
+            <div class="card-container">
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner ">
+                        <div id="FLL" class="flip-card-front fam_left">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+
+
+                <!--moving card-->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div id="FFL" class="flip-card-front fam_front">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p>AboutFamily()</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="about-entry"> One of my top motivators for giving my all in the workplace is my
+                                family. I have a beautiful wife who has blessed me with two wonderful little girls.
+One of which is a toddler, and the other is <span id="timer"></span> months old!
+                                I am their support, and I look forward to helping each of them sustain the bright
+                                futures ahead of them. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--moving card-->
+
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner-right ">
+                        <div id="FRL" class="flip-card-front fam_right">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+            </div>
+
+
+
+
+
+            <br/>
+            <br/>
+
+
+
+            <div class="card-container">
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner ">
+                        <div id="HLL" class="flip-card-front hobbies_left">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+
+
+                <!--moving card-->
+                <div class="flip-card ">
+                    <div class="flip-card-inner">
+                        <div id="HFL" class="flip-card-front hobbies_front">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p>AboutHobbies()</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="about-entry">
+                                In addition to learning programming languages in my free time, I also enjoy learning new
+                                human languages, traveling, writing stories, or entertaining myself with television.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--moving card-->
+                <!--stationary card-->
+                <div class="flip-cardb">
+                    <div class="flip-card-inner-right ">
+                        <div id="HRL" class="flip-card-front hobbies_right">
+                        </div>
+                    </div>
+                </div>
+                <!--stationary card-->
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+
+            <div class='Quotes_hdr'>
+                <h3>Favorite Quotes</h3>
+            </div>
+            <div class="quote-text">
+                <p>“To develop a complete mind: Study the science of art; Study the art of science. Learn how to see.
+                    Realize that everything connects to everything else.” </p>
+                <br/>
+                <p>― Leonardo da Vinci.</p>
+            </div>
+            <div class="quote-text">
+                <p>"Only one who devotes himself to a cause with his whole strength and soul can be a true master. For
+                    this reason mastery demands all of a person"</p>
+                <br/>
+                <p>― Albert Einstein</p>
+            </div>
+            <div class="quote-text">
+                <p>“Be the change that you wish to see in the world.”</p>
+                <br/>
+                <p> ― Mahatma Ghandi</p>
+            </div>
+
+
+            <br/>
+            <br/>
+            <br/>
+            <div class= "btnContainer">
+                <button onclick="Day()" id="dayBtn">Day</button>
+                <button onclick="Night()" id="nightBtn">Night</button>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="Skills" class="tabcontent ">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <div class="skills">
+
+            <h1 style="margin-left: 40%;"><u>My Skills</u></h1>
+            <!--https://codepen.io/alvarotrigo/pen/WNZQdyq-->
+
+            <!--Start Animated Progress Bar-->
+            <div class="skilltype-top">HTML
+                <div class="animated-progress progress-green">
+                    <span data-progress="98"></span>
+                </div>
+            </div>
+            <div class="skilltype">CSS
+                <div class="animated-progress progress-green">
+                    <span data-progress="97"></span>
+                </div>
+            </div>
+            <div class="skilltype">JavaScript
+                <div class="animated-progress progress-green">
+                    <span data-progress="95"></span>
+                </div>
+            </div>
+            <div class="skilltype">React
+                <div class="animated-progress progress-green">
+                    <span data-progress="92"></span>
+                </div>
+            </div>
+            <div class="skilltype">Python
+                <div class="animated-progress progress-green">
+                    <span data-progress="97"></span>
+                </div>
+            </div>
+            <div class="skilltype">SQL
+                <div class="animated-progress progress-green">
+                    <span data-progress="95"></span>
+                </div>
+            </div>
+            <div class="skilltype">Java
+                <div class="animated-progress progress-green">
+                    <span data-progress="93"></span>
+                </div>
+            </div>
+            <div class="skilltype-bottom">C++
+                <div class="animated-progress progress-green">
+                    <span data-progress="85"></span>
+                </div>
+                <br/>
+            </div>
+            <!--End Animated Progress Bar-->
+
+            <br/>
+            <br/>
+            <br/>
+
+        </div>
+    </div>
+
+    <div id="Projects" class="tabcontent">
+        <span style="color:white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <br/>
+        <br/>
+
+        <div id="myBtnContainer">
+            <button class="btn" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('college')"> College</button>
+            <button class="btn" onclick="filterSelection('nucamp')"> Nucamp</button>
+            <button class="btn" onclick="filterSelection('self_study')"> Self-Study</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column college">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jOQX4c-fYsAdE_ScUvkbk6xaAUrgnwgvQnZ_1RWb7NZPA?cn=THISLIFE&res=small&ts=1679465256" alt="Mountains" style="width:100%">
+                    <h4 style="text-align: center;">Roster Application</h4>
+                    <p>Developed a roster program in C++ that returns student attributes from parsed data by sorting,
+                        deleting, classifying or adding student objects according to the function called. </p>
+                </div>
+            </div>
+            <div class="column college">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jMQV9bK2u6AEcS_em29P3CBVZV51t4MhjbEwRNyGscOgg?cn=THISLIFE&res=small&ts=1679475926" alt="Lights" style="width:100%">
+                    <h4 style="text-align: center;">W.I.M.S.</h4>
+                    <p>Warehouzer Inventory Manager System stores parts in relation to any product that was being built,
+                        allows the user to search parts and products, handles exceptions, and performs error validation.
+                    </p>
+                </div>
+            </div>
+            <div class="column college">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jMUN0_MIWi1tvRplyqkKJAzKwg5ydwHipy3aIZBf9dNYQ?cn=THISLIFE&res=small&ts=1679461976" alt="Nature" style="width:100%">
+                    <h4 style="text-align: center;">Cordinus Global</h4>
+                    <p>This app retrieves information from a mysql database, and allows the user to manipulate the
+                        datasets in the application view through use of JavaFX controls for appointments, the customers,
+                        and the reports. </p>
+                </div>
+            </div>
+            </div>
+
+
+ <div class="row">
+            <div class="column nucamp">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jO7xqJzTup8n6i4yeyXz0V9ldMTLfbtJ__wYVBQ_4iTow?cn=THISLIFE&res=small&ts=1679504756" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">Nucamp Bootstrap Website</h4>
+                    <p>Working from the same inspiration as before, I built a Desktop React Application by using the MVC
+                        Design Model, Client-Server Communication, Formik, Redux, and the management of stateful
+                        variables.</p>
+                </div>
+            </div>
+            <div class="column nucamp">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jO-LfIQ0oRo3vX-YDCXwFhdVZV51t4MhjbEwRNyGscOgg?cn=THISLIFE&res=small&ts=1679475157" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">Nucamp React Website</h4>
+                    <p>Working from the same inspiration as before, I built a Desktop React Application by using the MVC
+                        Design Model, Client-Server Communication, Formik, Redux, and the management of stateful
+                        variables.</p>
+                </div>
+            </div>
+            <div class="column nucamp">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jOweLwLkiRUtUpjco_Iyba7qCe7ffHDJpwno-pEcjtJnw?cn=THISLIFE&res=small&ts=1679798731" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">Nucamp React Native Application</h4>
+                    <p>This mobile application allows users to view campsites, favorite campsites, delete sites from the
+                        favorites selection, post comments, and more!</p>
+                </div>
+            </div>
+            </div>
+
+
+ <div class="row">
+            <div class="column self_study">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jMmy-OJcpgzxZHHj3ua0gwhVZV51t4MhjbEwRNyGscOgg?cn=THISLIFE&res=small&ts=1679803398" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">SoloLearn Reference Guide</h4>
+                    <p>One of my favorite applications aside from Facebook is Sololearn. New comers tend to ask many of
+                        the same questions when joining the app, so I designed a reference guide for Sololearn Beginners
+                        known as the above.</p>
+                </div>
+            </div>
+            <div class="column self_study">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jOZ5QLUa0KRD8t0BZD8s4jIV7ntXQOewWgszVPDOQPWWw?cn=THISLIFE&res=small&ts=1679803251" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">Brancher</h4>
+                    <p>I am passionate about making this planet a better place for future generations, so I made this
+                        presentation that reviews existing solutions to acheive that aim.</p>
+                </div>
+            </div>
+            <div class="column self_study">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jOFWs03_bKNNLSqCLZWgqt94xJ2Twu75QF_jizMkB1ZdA?cn=THISLIFE&res=small&ts=1679465254" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">Brancher 2.0</h4>
+                    <p>When I was studying React at Nucamp, I decided my personal project should be an e-commerce
+                        application inspired from Brancher. The application's functionality is also derived from a set
+                        of YouTube tutorials.
+                    </p>
+                </div>
+            </div>
+ </div>
+
+
+  <div class="row">
+            <div class="column self_study">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jMmy-OJcpgzxZHHj3ua0gwhVZV51t4MhjbEwRNyGscOgg?cn=THISLIFE&res=small&ts=1679803398" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">MURAH MUSE</h4>
+                    <p>One of my favorite applications aside from Facebook is Sololearn. New comers tend to ask many of
+                        the same questions when joining the app, so I designed a reference guide for Sololearn Beginners
+                        known as the above.</p>
+                </div>
+            </div>
+            <div class="column self_study">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jOZ5QLUa0KRD8t0BZD8s4jIV7ntXQOewWgszVPDOQPWWw?cn=THISLIFE&res=small&ts=1679803251" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">BAHN MI</h4>
+                    <p>I am passionate about making this planet a better place for future generations, so I made this
+                        presentation that reviews existing solutions to acheive that aim.</p>
+                </div>
+            </div>
+            <div class="column self_study">
+                <div class="content">
+                    <img src="https://uniim1.shutterfly.com/render/00-LgFycUZDSPj7g7kA8-VcT9pJOyFNMxMOjPbU5xti7jOFWs03_bKNNLSqCLZWgqt94xJ2Twu75QF_jizMkB1ZdA?cn=THISLIFE&res=small&ts=1679465254" alt="Car" style="width:100%">
+                    <h4 style="text-align: center;">BTN</h4>
+                    <p>When I was studying React at Nucamp, I decided my personal project should be an e-commerce
+                        application inspired from Brancher. The application's functionality is also derived from a set
+                        of YouTube tutorials.
+                    </p>
+                </div>
+            </div>
+ </div>
+
+
+
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+           
+
+            <!-- END GRID -->
+        </div>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+        <form action="https://formspree.io/f/mjvdejjv" method="POST">
+            <div class="title">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="half">
+                <div class="item">
+                    <label for="name">NAME</label>
+                    <input type="text" id = "name" name="Name">
+                </div>
+                <div class="item">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id = "email" name="Email">
+                </div>
+            </div>
+            <div class="full">
+                <label for="message">MESSAGE</label>
+                <textarea name="textentry" id = "message"></textarea>
+            </div>
+            <div class="action">
+                <input type="submit" value = "SEND MESSAGE">
+                <input type="reset" value = "RESET">
+            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/uri-easter-34491a209/" class="fa fa-linkedin"></a>
+                <!-- https://www.w3schools.com/css/css_tooltip.asp -->
+                <a href="mailto:uwill18@wgu.edu" class="fa fa-envelope tooltip">
+                    <span class="tooltiptext">uwill18@wgu.edu</span>
+                </a>
+                <a href="https://github.com/Uwill18" class="fa fa-github"></a>
+            </div>
+        </form>
+
+
+
+        <footer>
+            <p>Easter Portfolio Productions &copy; 2023. All Rights Reserved.</p>
+        </footer>
+
+
+
+
+
+
+
+    </div>
+
+
+    <!--Nav opening script-->
+    <script>
+        function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  //document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  //document.getElementById("main").style.marginLeft= "0";
+  //document.body.style.backgroundColor = "white";
+}
+    </script>
+    <!--Nav opening script-->
+    <!---Tab functions-->
+    <script>
+        function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    </script>
+    <!---Tab functions-->
+    <!---Slideshow function--->
+    <script>
+        var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("quote-text");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 15000); // Change quote slides every 15 seconds
+}
+    </script>
+    <!---Slideshow function--->
+    <!---Grid F(x) --->
+    <script>
+        filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    ClassRemover(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) ClassAdder(x[i], "show");
+  }
+}
+
+function ClassAdder(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function ClassRemover(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+
+    <!---Grid F(x) --->
+    <!---Typewriter Function--->
+    <!---https://www.youtube.com/watch?v=dbdYazO4IZ4-->
+    <script>
+        var i = 1;
+            function func()
+            {
+                var message = "My name is Uri W. Easter. I am a Full-Stack Developer who designs ideal User Experiences suited to the respective vision of each client. Welcome to my site!";
+                if( i <= message.length )
+                {
+                    
+                    var txt = message.substring(0,i);
+                    document.getElementById("welcome").innerHTML = txt;
+                    setTimeout("func()",95);
+                    i++;
+                }
+                
+            }
+            
+            func();
+
+    </script>
+
+    <!---Typewriter Function--->
+    <!---JQuery for Skills--->
+    <script>
+        $(".animated-progress span").each(function () {
+  $(this).animate(
+    {
+      width: $(this).attr("data-progress") + "%",
+    },
+    12000
+  );
+  $(this).text($(this).attr("data-progress") + "%");
+});
+    </script>
+    <!---JQuery for Skills--->
+    <!--Night/Day switch-->
+    <!--https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_setattribute1-->
+    <!-- https://www.w3schools.com/js/js_htmldom_collections.asp -->
+    <script>
+        function Day()
+        {
+          
+            document.getElementById("Invert").style.backgroundColor="#FAF9F6";
+            document.getElementById("Invert").style.width="100%";
+            document.getElementById("Invert").style.color="black";
+            document.getElementById("About").style.backgroundColor="#FAF9F6";
+            document.getElementById("About").style.width="100%";
+            document.getElementById("About").style.color="black";
+            document.getElementById("aboutopen").style.color="#000";
+            document.getElementById("AHL").setAttribute("class", "AboutHeadingLight");
+            document.getElementById("dayBtn").style.backgroundColor="FAF9F6";
+            document.getElementById("dayBtn").style.borderRadius="5px";
+            document.getElementById("dayBtn").style.padding="15px";
+            document.getElementById("dayBtn").style.borderColor="#ffa700";
+            document.getElementById("dayBtn").style.color="#ffa700";
+            document.getElementById("dayBtn").style.backgroundImage="none";
+
+
+
+          
+            document.getElementById("nightBtn").style.borderRadius="10px";
+            document.getElementById("nightBtn").style.padding="15px";
+            document.getElementById("nightBtn").style.borderColor="#0197F6";
+            document.getElementById("nightBtn").style.color="#0197F6";
+            document.getElementById("nightBtn").style.backgroundImage="linear-gradient(to top right, black, #091366)";
+
+
+            //document.getElementById("FCFL").setAttribute("class", "flip-card-front-lite");
+            
+
+
+            const frontcardCollection = document.getElementsByClassName("flip-card-front");
+              for (let i = 0; i < frontcardCollection.length; i++) {
+                       frontcardCollection[i].style.backgroundColor = "#F8F8FF";
+                       frontcardCollection[i].style.borderColor = "black";
+                      }
+
+            const backcardCollection = document.getElementsByClassName("flip-card-back");
+              for (let i = 0; i < backcardCollection.length; i++) {
+                       backcardCollection[i].style.backgroundColor = "#F8F8FF";
+                       backcardCollection[i].style.color = "black";
+                       backcardCollection[i].style.borderColor = "black";
+                      }
+
+            const QuoteText = document.getElementsByClassName("quote-text");
+              for (let i = 0; i < QuoteText.length; i++) {
+                       QuoteText[i].style.color = "white";
+                      }
+
+            //document.getElementById("FCBL").setAttribute("class", "flip-card-back-lite");  
+            document.getElementById("MLL").style.backgroundColor="#990000";
+            
+           
+            document.getElementById("MRL").style.backgroundColor="#990000"; 
+            document.getElementById("MFL").style.color="#DB0F27"; 
+            document.getElementById("SLL").style.backgroundColor="#FD8F52";
+            document.getElementById("SRL").style.backgroundColor="#FD8F52"; 
+            document.getElementById("SFL").style.color="#FD8F52";
+            document.getElementById("FLL").style.backgroundColor="#FFBD71"; 
+            document.getElementById("FRL").style.backgroundColor="#FFBD71"; 
+            document.getElementById("FFL").style.color="#FFA700"; 
+            document.getElementById("HLL").style.backgroundColor="#BB8252"; 
+            document.getElementById("HRL").style.backgroundColor="#BB8252"; 
+            document.getElementById("HFL").style.color="#462F1B"; 
+
+            
+            
+        }
+        function Night()
+        {
+            document.getElementById("Invert").style.backgroundColor="black";
+            document.getElementById("Invert").style.color="white";
+            document.getElementById("Invert").style.width="100%";
+            document.getElementById("About").style.backgroundColor="black";
+            document.getElementById("About").style.color="white";
+            document.getElementById("About").style.width="100%";
+            document.getElementById("AHL").setAttribute("class", "AboutHeading"); 
+            document.getElementById("aboutopen").style.color="#39ff14";
+            document.getElementById("dayBtn").style.borderRadius="5px";
+            document.getElementById("dayBtn").style.padding="15px";
+            document.getElementById("dayBtn").style.borderColor="#ffa700";
+            document.getElementById("dayBtn").style.color="white";
+            document.getElementById("dayBtn").style.backgroundImage="linear-gradient(to top left, red, yellow)";
+
+
+            document.getElementById("nightBtn").style.backgroundColor="black";
+            document.getElementById("nightBtn").style.borderRadius="10px";
+            document.getElementById("nightBtn").style.padding="15px";
+            document.getElementById("nightBtn").style.borderColor="#0197F6";
+            document.getElementById("nightBtn").style.color="#0197F6";
+            document.getElementById("nightBtn").style.backgroundImage="none";
+
+
+
+
+
+
+            const frontcardCollection = document.getElementsByClassName("flip-card-front");
+              for (let i = 0; i < frontcardCollection.length; i++) {
+                       frontcardCollection[i].style.backgroundColor = "#313639";
+                      }
+
+            const backcardCollection = document.getElementsByClassName("flip-card-back");
+              for (let i = 0; i < backcardCollection.length; i++) {
+                       backcardCollection[i].style.backgroundColor = "#313639";
+                       backcardCollection[i].style.color = "white";
+                      }
+
+
+          
+
+           // document.getElementById("FCFL").setAttribute("class", "flip-card-front");
+            //document.getElementById("FCBL").setAttribute("class", "flip-card-back");  
+
+            //document.getElementById("MLL").setAttribute("class", "mission_left"); 
+            document.getElementById("MLL").style.backgroundColor="#00AB41";
+            document.getElementById("MRL").style.backgroundColor="#00AB41"; 
+            document.getElementById("MFL").style.color="#39ff14";
+            document.getElementById("SLL").style.backgroundColor="#051094";
+            document.getElementById("SRL").style.backgroundColor="#051094"; 
+            document.getElementById("SFL").style.color="#34e2e2";
+            document.getElementById("FLL").style.backgroundColor="#710193"; 
+            document.getElementById("FRL").style.backgroundColor="#710193"; 
+            document.getElementById("FFL").style.color="#ad7fa8"; 
+            document.getElementById("HLL").style.backgroundColor="#ff6289"; 
+            document.getElementById("HRL").style.backgroundColor="#ff6289"; 
+            document.getElementById("HFL").style.color="#F59784"; 
+            //document.getElementsByClassName("quote-text").style.color="white";
+        }
+    </script>
+    <!---->
+    <!--https://codepen.io/RyanNiu/pen/GNYbwY-->
+    <!--CountUp timer-->
+    <script>
+        function updateTimer() {
+    // yyyy-MM-dd HH:mm:ss
+  past  = Date.parse("2023-03-14 01:23:00");
+  now     = new Date();
+  diff    = now - past;
+
+  years  = Math.floor( diff / (1000*60*60*24*30*12) );
+  months = Math.floor( diff / (1000*60*60*24*30) );
+  days   = Math.floor( diff / (1000*60*60*24) );
+  hours  = Math.floor( diff / (1000*60*60) );
+  mins   = Math.floor( diff / (1000*60) );
+  secs   = Math.floor( diff / 1000 );
+
+  y = years;
+  M = months - years  * 12;
+  d = days   - months * 30;
+  h = hours  - days   * 24;
+  m = mins   - hours  * 60;
+  s = secs   - mins   * 60;
+  document.getElementById("timer")
+    .innerHTML = M ;
+}
+setInterval('updateTimer()', 1000 );
+    </script>
+    <!--CountUp timer-->
+
+</body>
+
+</html>
