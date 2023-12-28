@@ -18,9 +18,10 @@
 
 
 
-    <div class="tab">
+    <div  class="tab">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" id="toggle" onclick="closeNav()">&times;</a>
+            <!-- <a href="javascript:void(0)" class="closebtn" id="toggle" onclick="closeNav()">&times;</a> -->
             <a class="tablinks bar-item" onclick="openTab(event, 'Home')" id="defaultOpen">Home</a>
             <a class="tablinks bar-item" onclick="openTab(event, 'About')">About</a>
             <a class="tablinks bar-item" onclick="openTab(event, 'Skills')">Skills</a>
@@ -549,20 +550,40 @@ One of which is a toddler, and the other is <span id="timer"></span> months old!
 
 
     <!--Nav opening script-->
-    <script>
+    <!-- <script>
         function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "250px";  x
   //document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; x
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";  x
   //document.getElementById("main").style.marginLeft= "0";
   //document.body.style.backgroundColor = "white";
 }
-    </script>
+    </script> -->
     <!--Nav opening script-->
+<script>
+const toggle = document.getElementById('toggle');
+const sidebar = document.getElementById('mySidenav');
+
+document.onclick = function(e){
+    if(e.target.id !== 'sidebar' && e.target.id !=='toggle'){
+        toggle.classList.remove('tabcontent')
+        sidebar.classList.remove('tablinks')
+    }
+
+toggle.onclick = function(){
+    toggle.classList.remove('tabcontent')
+    sidebar.classList.remove('tablinks')
+}
+}
+</script>
+
+
+
+
     <!---Tab functions-->
     <script>
         function openTab(evt, tabName) {
