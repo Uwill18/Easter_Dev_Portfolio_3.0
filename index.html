@@ -14,14 +14,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
-<body id="toggle">
+<body id="">
 
 
 
-    <div  class="tab">
+    <div class="tab">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" id="t0" onclick="closeNav()">&times;</a>
-            <!-- <a href="javascript:void(0)" class="closebtn" id="toggle" onclick="closeNav()">&times;</a> -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="tablinks bar-item" onclick="openTab(event, 'Home')" id="defaultOpen">Home</a>
             <a class="tablinks bar-item" onclick="openTab(event, 'About')">About</a>
             <a class="tablinks bar-item" onclick="openTab(event, 'Skills')">Skills</a>
@@ -35,7 +34,7 @@
 
 
     <div id="Home" class="tabcontent">
-        <span style="font-size:30px;cursor:pointer" id="t1" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <div id="welcome-spacing">
             <h2>Hello!</h2>
             <img src="" alt="" style="width:80">
@@ -292,7 +291,7 @@ One of which is a toddler, and the other is <span id="timer"></span> months old!
 
 
     <div id="Skills" class="tabcontent ">
-        <span style="font-size:30px;cursor:pointer" id="t3" onclick="openNav()">&#9776; open</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
         <div class="skills">
 
@@ -351,7 +350,7 @@ One of which is a toddler, and the other is <span id="timer"></span> months old!
     </div>
 
     <div id="Projects" class="tabcontent">
-        <span style="color:white;font-size:30px;cursor:pointer" id="t4" onclick="openNav()">&#9776; open</span>
+        <span style="color:white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         <br/>
         <br/>
 
@@ -499,7 +498,7 @@ One of which is a toddler, and the other is <span id="timer"></span> months old!
     </div>
 
     <div id="Contact" class="tabcontent">
-        <span style="font-size:30px;cursor:pointer" id="t5" onclick="openNav()">&#9776; open</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 
         <form action="https://formspree.io/f/mjvdejjv" method="POST">
@@ -552,65 +551,18 @@ One of which is a toddler, and the other is <span id="timer"></span> months old!
     <!--Nav opening script-->
     <script>
         function openNav() {
-
-  
-  document.getElementById("mySidenav").style.width = "25%";  
-//   document.getElementById("mySidenav").style.marginLeft = "25%";
-  document.getElementById("Home").style.marginLeft = "25%";
-  document.getElementById("About").style.marginLeft = "25%";
-  document.getElementById("Skills").style.marginLeft = "25%";
-  document.getElementById("Projects").style.marginLeft = "25%";
-  document.getElementById("Contact").style.marginLeft = "25%";
-  document.getElementById("mySidenav").style.display = "block";
-  document.getElementById("t0").style.display = 'block';
-  document.getElementById("t1").style.display = 'none';
-  document.getElementById("aboutopen").style.display = 'none';
-  document.getElementById("t3").style.display = 'none';
-  document.getElementById("t4").style.display = 'none';
-  document.getElementById("t5").style.display = 'none';
-//   document.getElementsByClassName("tabcontent").style.marginLeft="12%";
-//   document.body.style.backgroundColor = "rgba(0,0,0,0.4)"; x
+  document.getElementById("mySidenav").style.width = "250px";
+  //document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";  x
-  document.getElementById("Home").style.marginLeft= "0";
-  document.getElementById("About").style.marginLeft= "0";
-  document.getElementById("Skills").style.marginLeft= "0";
-  document.getElementById("Projects").style.marginLeft= "0";
-  document.getElementById("Contact").style.marginLeft= "0";
-  document.getElementById("mySidenav").style.display = "none";
-  document.getElementById("t0").style.display = 'none';
-  document.getElementById("t1").style.display = 'block';
-  document.getElementById("aboutopen").style.display = 'block';
-  document.getElementById("t3").style.display = 'block';
-  document.getElementById("t4").style.display = 'block';
-  document.getElementById("t5").style.display = 'block';
-//   document.getElementById("toggle").style.display = "inline-block";
+  document.getElementById("mySidenav").style.width = "0";
+  //document.getElementById("main").style.marginLeft= "0";
   //document.body.style.backgroundColor = "white";
 }
     </script>
     <!--Nav opening script-->
-<script>
-const toggle = document.getElementById('toggle');
-const sidebar = document.getElementById('mySidenav');
-
-document.onclick = function(e){
-    if(e.target.id !== 'sidebar' && e.target.id !=='toggle'){
-        toggle.classList.remove('active')
-        sidebar.classList.remove('active')
-    }
-
-toggle.onclick = function(){
-    toggle.classList.remove('active')
-    sidebar.classList.remove('active')
-}
-}
-</script>
-
-
-
-
     <!---Tab functions-->
     <script>
         function openTab(evt, tabName) {
