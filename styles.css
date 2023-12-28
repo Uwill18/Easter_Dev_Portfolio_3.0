@@ -942,33 +942,23 @@ footer {
 }
 
 #toggle{
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: #03a9f4;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
 }
 
 #toggle::before
 {
-    content:'';
+
     position:absolute;
-    width: 28px;
-    height: 2px;
-    background: #fff;
-    transform:translateY(-5px)
+
+ 
 }
 
 #toggle::after
 {
-    content:'';
+
     position:absolute;
-    width: 28px;
-    height: 2px;
-    background: #fff;
-    transform:translateY(5px)
+
 }
+
+
+
